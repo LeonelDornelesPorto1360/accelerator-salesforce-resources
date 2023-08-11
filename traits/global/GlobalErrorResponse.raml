@@ -1,0 +1,26 @@
+#%RAML 1.0 Trait
+displayName: Error Responses
+usage: Apply this trait to define common response codes returned by all API implementations.
+responses: 
+  400:
+    description: The server cannot or will not process the request due to something that is perceived to be a client error.
+    body:
+      application/json:
+        type: !include ../../dataTypes/global/ErrorResponse.raml
+        example: !include ../../examples/errors/Return400Example.raml
+
+  404:
+    description: The server cannot find the requested resource.
+    body:
+      application/json:
+        examples:
+          singleError: !include ../../examples/errors/Return400Example.raml
+          agregatedError: !include ../../examples/errors/Agregated400ErrorExample.raml
+
+  500:
+    description: An internal error occurred while processing the API request.
+    body:
+      application/json:
+        examples: 
+          singleError: !include ../../examples/errors/Return500Example.raml
+          agregatedError: !include ../../examples/errors/Agregated500ErrorExample.raml

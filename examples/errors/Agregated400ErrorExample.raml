@@ -1,0 +1,22 @@
+#%RAML 1.0 NamedExample
+value: {
+    "error": {
+        "code": 400,
+        "reason": "Internal Server Error",
+        "apiName": "customer-insights-prc-api",
+        "correlationId": "25b6fd90-8864-11ed-9a6a-00d76d1c7fcd",
+        "dateTime": "2022-12-30T14:05:57.532-03:00",
+        "message": [
+            {
+                "code": 404,
+                "apiName": "commerce-cloud-sys-api",
+                "description": "No customer with search parameter 'spavlova@uog.co' could be found."
+            },
+            {
+                "code": 404,
+                "apiName": "service-cloud-sys-api",
+                "description": "No contact for the given search parameter spavlova@uog.co could be found."
+            }
+        ]
+    }
+}

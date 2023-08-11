@@ -1,0 +1,9 @@
+#%RAML 1.0 DataType
+type: !include ../global/PaginatedPartialResponse.raml
+displayName: Customers response
+properties:
+  hits:
+    type: array
+    items: !include Customer.raml
+examples: 
+  CustomersResponseWithHits: !include ../../examples/commerce/CustomersResponseExample.raml
