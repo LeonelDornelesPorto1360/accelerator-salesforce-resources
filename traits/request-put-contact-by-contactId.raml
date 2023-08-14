@@ -1,16 +1,17 @@
 #%RAML 1.0 Trait
 
-uses:
-  put-contact-request: ../types/requests/put-contact.raml
-  put-contact-response: ../types/responses/put-contact.raml
-displayName: updateContactDetails
-description: Updates a contact's account in the service cloud system.
-body:
-  type: put-contact-request.put-contact
-  example: !include ../examples/requests/put-contact.json
-responses:
-  200:
-    body:
-      application/json:
-        type: put-contact-response.put-contact
-        example: !include ../examples/responses/put-contact.json
+test:
+  uses:
+    put-contact-request: ../types/requests/put-contact.raml
+    put-contact-response: ../types/responses/put-contact.raml
+  displayName: updateContactDetails
+  description: Updates a contact's account in the service cloud system.
+  body:
+    type: put-contact-request.put-contact
+    example: !include ../examples/requests/put-contact.json
+  responses:
+    200:
+      body:
+        application/json:
+          type: put-contact-response.put-contact
+          example: !include ../examples/responses/put-contact.json
