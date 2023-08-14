@@ -2,3 +2,8 @@
 
 uses:
   request-patch-opportunity: ../types/requests/patch-opportunity.raml
+
+body:
+  application/json:
+    type: request-patch-opportunity.patch-opportunity
+    example: !include ../examples/requests/patch-opportunity.json
