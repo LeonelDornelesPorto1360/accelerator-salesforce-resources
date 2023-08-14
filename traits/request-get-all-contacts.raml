@@ -1,0 +1,39 @@
+#%RAML 1.0 Trait
+
+uses:
+  global-resources-fragments: /exchange_modules/f8f9abd2-10a0-400f-bb5b-60cbd5b8cb29/global-resources-fragments/1.0.0/global-resources-fragments.raml
+  request-patch-opportunity: ../types/requests/patch-opportunity.raml
+  response-patch-opportunity: ../types/responses/patch-opportunity.raml
+
+is: [ global-resources-fragments.ErrorResponses ]
+securedBy:  
+- global-resources-fragments.client-enforcement
+- global-resources-fragments.basic-authentication
+- global-resources-fragments.oauth_2_0
+get:
+  displayName: getCasesDetailsByEmail
+  description: Get all cases for the given e-mail.
+  queryParameters:
+    email:
+      type: string
+      pattern: ^.+@.+\..+$
+      example: "dianedeluna@email.com"
+      description: E-mail address of a customer
+    page:
+      type: integer
+      example: 1
+      description: Current page
+    limit?:
+      type: integer
+      example: 20
+      description: Limit of objects per page
+  body:
+    application/json:
+      type: request-patch-opportunity.patch-opportunity
+      example: !include ../examples/requests/patch-opportunity.json
+  responses:
+    200:
+      body:
+        application/json:
+          #type: response-patch-opportunity.patch-opportunity
+          example: !include ../examples/responses/patch-opportunity.json
