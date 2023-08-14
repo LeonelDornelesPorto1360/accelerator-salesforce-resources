@@ -1,5 +1,7 @@
 #%RAML 1.0 Trait
 
+description: Base resource for managing cases.
+is: [ClientIdRequired, GlobalErrorResponse]
 get:
   displayName: getCasesDetailsByEmail
   description: Get all cases for the given e-mail.
