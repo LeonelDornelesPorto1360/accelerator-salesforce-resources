@@ -9,21 +9,20 @@ securedBy:
 - global-resources-fragments.client-enforcement
 - global-resources-fragments.basic-authentication
 - global-resources-fragments.oauth_2_0
-get:
-  displayName: getAllCasesDetails
-  description: Get all cases for the given e-mail.
-  queryParameters:
-    page:
-      type: integer
-      example: 1
-      description: Current page
-    limit?:
-      type: integer
-      example: 20
-      description: Limit of objects per page
-  responses: 
-    200:
-      body:
-        application/json:
-          type: response-get-all-cases.get-all-cases
-          example: !include ../examples/responses/get-all-cases.json
+displayName: getAllCasesDetails
+description: Get all cases for the given e-mail.
+queryParameters:
+  page:
+    type: integer
+    example: 1
+    description: Current page
+  limit?:
+    type: integer
+    example: 20
+    description: Limit of objects per page
+responses: 
+  200:
+    body:
+      application/json:
+        type: response-get-all-cases.get-all-cases
+        example: !include ../examples/responses/get-all-cases.json
