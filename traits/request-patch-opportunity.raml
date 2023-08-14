@@ -5,8 +5,11 @@ uses:
   request-patch-opportunity: ../types/requests/patch-opportunity.raml
   response-patch-opportunity: ../types/responses/patch-opportunity.raml
 
-description: Base resource for managing cases.
-is: [ClientIdRequired, GlobalErrorResponse]
+is: [ global-resources-fragments.ErrorResponses ]
+securedBy:  
+- global-resources-fragments.client-enforcement
+- global-resources-fragments.basic-authentication
+- global-resources-fragments.oauth_2_0
 get:
   displayName: getCasesDetailsByEmail
   description: Get all cases for the given e-mail.
