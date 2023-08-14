@@ -10,19 +10,27 @@ securedBy:
 - global-resources-fragments.basic-authentication
 - global-resources-fragments.oauth_2_0
 get:
-  displayName: getAllCasesDetails
-  description: Get all cases for the given e-mail.
-  queryParameters:
-    page:
-      type: integer
-      example: 1
-      description: Current page
-    limit?:
-      type: integer
-      example: 20
-      description: Limit of objects per page
-  responses: 
-    200:
-      body:
-        application/json:
-          type: get-cases-by-params.get-cases-by-params
+  description: Base resource for managing cases.
+  is: [ClientIdRequired, GlobalErrorResponse]
+  get:
+    displayName: getCasesDetailsByEmail
+    description: Get all cases for the given e-mail.
+    queryParameters:
+      email:
+        type: string
+        pattern: ^.+@.+\..+$
+        example: "dianedeluna@email.com"
+        description: E-mail address of a customer
+      page:
+        type: integer
+        example: 1
+        description: Current page
+      limit?:
+        type: integer
+        example: 20
+        description: Limit of objects per page
+    responses: 
+      200:
+        body:
+          application/json:
+            type: get-cases-by-params.
