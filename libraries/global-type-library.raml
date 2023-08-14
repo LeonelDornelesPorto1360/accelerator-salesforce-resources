@@ -1,2 +1,37 @@
 #%RAML 1.0 Library
-usage: Defines globally reusable types
+usage: Defines globally reusable ../types
+
+uses:
+  request-patch-opportunity: ../types/requests/patch-opportunity.raml
+  response-patch-opportunity: ../types/responses/patch-opportunity.raml
+  response-get-all-cases: ../types/responses/get-all-cases.raml
+  response-get-all-contacts: ../types/responses/get-all-contacts.raml
+  response-get-cases-by-params: ../types/responses/get-cases-by-params.raml
+  response-get-ping: ../types/responses/get-ping.raml
+  request-put-contact: ../types/requests/put-contact.raml
+  response-put-contact: ../types/responses/put-contact.raml
+
+../types:
+  request-patch-opportunity:
+    type: request-patch-opportunity.patch-opportunity
+    example: !include /examples/requests/patch-opportunity.json
+
+  response-patch-opportunity:
+  ##type: response-patch-opportunity.patch-opportunity
+    example: !include examples/responses/patch-opportunity.json
+
+  response-get-ping:
+    type: response-get-ping.get-ping
+    example: !include /examples/responses/get-ping.json
+  
+  response-get-all-cases:
+    type: response-get-all-cases.get-all-cases
+    example: !include /examples/responses/get-all-cases.json
+
+  response-get-all-contacts:
+    type: response-get-all-contacts.get-all-contacts
+    example: !include /examples/responses/get-all-contacts.json
+
+  response-get-cases-by-params:
+    type: response-get-cases-by-params.get-cases-by-params
+    example: !include /examples/responses/get-cases-by-params.json
