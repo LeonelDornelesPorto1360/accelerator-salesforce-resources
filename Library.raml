@@ -4,8 +4,8 @@ usage: Common RAML Fragments to standardise implementation of common aspects of 
 #Ensure no existing traits or datatypes are updated with a breaking change if possible, they could be used by any number of services that could be affected. Ensure to use semantic versioning when publishing this fragment.
 
 uses:
-  get-customers-by-id-datatype: types/requests/patch-opportunity.raml
-  post-customer-request-datatype: types/requests/post-customers-datatype.raml
+  request-patch-opportunity: types/requests/patch-opportunity.raml
+  response-patch-opportunity: types/responses/
   post-customer-response-datatype: types/responses/post-customers-datatype.raml
 
 types:
