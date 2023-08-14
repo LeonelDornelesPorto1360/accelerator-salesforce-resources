@@ -4,6 +4,8 @@ uses:
   request-patch-opportunity: ../types/requests/patch-opportunity.raml
   response-patch-opportunity: ../types/responses/patch-opportunity.raml
 
+description: Base resource for managing cases.
+is: [ClientIdRequired, GlobalErrorResponse]
 get:
   displayName: getCasesDetailsByEmail
   description: Get all cases for the given e-mail.
