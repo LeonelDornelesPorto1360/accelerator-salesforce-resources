@@ -14,15 +14,30 @@ uses:
   response-put-contact: types/responses/put-contact.raml
 
 types:
-  
-    response-get-ping:
-      type: response-get-ping.get-ping
-      example: !include /examples/responses/get-ping.json
-  
-  post-customers-request:
-    type: post-customer-request-datatype.post-customer
-    example: !include examples/requests/post-customer-request.json
+  request-patch-opportunity:
+    type: request-patch-opportunity.patch-opportunity
+    example: !include /examples/requests/patch-opportunity.json
 
-  post-customers-response:
-    type: post-customer-response-datatype.post-customer
-    example: !include examples/responses/post-customer-response.json
+  response-patch-opportunity:
+    type: response-patch-opportunity.patch-opportunity
+    example: !include /examples/responses/patch-opportunity.json
+
+  response-get-ping:
+    type: response-get-ping.get-ping
+    example: !include /examples/responses/get-ping.json
+  
+  response-get-all-cases:
+    type: response-get-all-cases.get-all-cases
+    example: !include /examples/responses/get-all-cases.json
+
+  response-get-all-contacts:
+    type: response-get-all-contacts.get-all-contacts
+    example: !include /examples/responses/get-all-contacts.json
+
+  response-get-cases-by-params:
+    type: response-get-cases-by-params.get-cases-by-params
+    example: !include /examples/responses/get-cases-by-params.json
+
+  response-get-cases-by-params:
+    type: response-get-cases-by-params.get-cases-by-params
+    example: !include /examples/responses/get-cases-by-params.json
