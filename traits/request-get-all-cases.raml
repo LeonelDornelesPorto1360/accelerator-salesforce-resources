@@ -1,0 +1,23 @@
+#%RAML 1.0 Trait
+
+uses:
+  global-resources-fragments: /exchange_modules/f8f9abd2-10a0-400f-bb5b-60cbd5b8cb29/global-resources-fragments/1.0.0/global-resources-fragments.raml
+  response-ping: ../types/responses/get-ping.raml
+
+is: [ global-resources-fragments.ErrorResponses ]
+securedBy:  
+- global-resources-fragments.client-enforcement
+- global-resources-fragments.basic-authentication
+- global-resources-fragments.oauth_2_0
+get:
+  displayName: healthCheck
+  queryParameters:
+    checkDependencies?:
+      description: Set to true to check and report status of all dependencies, such as system connections and downstream APIs; default is false
+      type: boolean
+  responses:
+    200:
+      body:
+        application/json:
+          type: response-ping.get-ping
+          example: !include ../examples/responses/get-ping.json
