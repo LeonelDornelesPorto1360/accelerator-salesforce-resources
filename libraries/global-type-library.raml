@@ -1,13 +1,8 @@
 #%RAML 1.0 ResourceType
 
-uses:
-  global-resources-fragments: exchange_modules/f8f9abd2-10a0-400f-bb5b-60cbd5b8cb29/global-resources-fragments/1.0.1/global-resources-fragments.raml
-
-
 uriParameters:
   contactId:
     description: Specifies the unique identifier for the contact's account.
     example: 0034x00001I71rbAAB
     type: string
 put:
-  is: [, global-resources-fragments.ErrorResponses]
