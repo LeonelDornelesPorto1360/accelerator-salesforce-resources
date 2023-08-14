@@ -9,15 +9,14 @@ securedBy:
 - global-resources-fragments.client-enforcement
 - global-resources-fragments.basic-authentication
 - global-resources-fragments.oauth_2_0
-
-  displayName: healthCheck
-  queryParameters:
-    checkDependencies?:
-      description: Set to true to check and report status of all dependencies, such as system connections and downstream APIs; default is false
-      type: boolean
-  responses:
-    200:
-      body:
-        application/json:
-          type: response-ping.get-ping
-          example: !include ../examples/responses/get-ping.json
+displayName: healthCheck
+queryParameters:
+  checkDependencies?:
+    description: Set to true to check and report status of all dependencies, such as system connections and downstream APIs; default is false
+    type: boolean
+responses:
+  200:
+    body:
+      application/json:
+        type: response-ping.get-ping
+        example: !include ../examples/responses/get-ping.json
