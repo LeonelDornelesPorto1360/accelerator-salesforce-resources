@@ -9,24 +9,23 @@ securedBy:
 - global-resources-fragments.client-enforcement
 - global-resources-fragments.basic-authentication
 - global-resources-fragments.oauth_2_0
-get:
-  displayName: getContactDetails
-  description: Get customer contact information for the given search parameter.
-  queryParameters:
-    search:
-      type: string
-      example: "dianedeluna@email.com"
-      description: This search parameter can be a name, email, id or phone number
-    page:
-      type: integer
-      example: 1
-      description: Current page
-    limit?:
-      type: integer
-      example: 20
-      description: Limit of objects per page
-  responses: 
-    200:
-      body: 
-        application/json:
-          type: get-all-contacts.get-all-contacts
+displayName: getContactDetails
+description: Get customer contact information for the given search parameter.
+queryParameters:
+  search:
+    type: string
+    example: "dianedeluna@email.com"
+    description: This search parameter can be a name, email, id or phone number
+  page:
+    type: integer
+    example: 1
+    description: Current page
+  limit?:
+    type: integer
+    example: 20
+    description: Limit of objects per page
+responses: 
+  200:
+    body: 
+      application/json:
+        type: get-all-contacts.get-all-contacts
