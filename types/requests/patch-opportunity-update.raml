@@ -99,9 +99,16 @@ types:
           required: false
         forecastCategory:
           type: string
-          example: Pipeline
+          example: Omitted
           description: A categoria de previsão da oportunidade.
           required: false
+          enum: 
+            - Omitted
+            - Pipeline
+            - BestCase
+            - MostLikely
+            - Forecast
+            - Closed
         forecastCategoryName:
           type: string
           example: Omitted
