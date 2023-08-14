@@ -10,14 +10,19 @@ securedBy:
 - global-resources-fragments.basic-authentication
 - global-resources-fragments.oauth_2_0
 get:
-  displayName: healthCheck
+  displayName: getAllCasesDetails
+  description: Get all cases for the given e-mail.
   queryParameters:
-    checkDependencies?:
-      description: Set to true to check and report status of all dependencies, such as system connections and downstream APIs; default is false
-      type: boolean
-  responses:
+    page:
+      type: integer
+      example: 1
+      description: Current page
+    limit?:
+      type: integer
+      example: 20
+      description: Limit of objects per page
+  responses: 
     200:
       body:
         application/json:
-          type: response-ping.get-ping
-          example: !include ../examples/responses/get-ping.json
+          type: CasesResponse
