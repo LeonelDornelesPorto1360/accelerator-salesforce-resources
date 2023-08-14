@@ -10,15 +10,12 @@ securedBy:
 - global-resources-fragments.client-enforcement
 - global-resources-fragments.basic-authentication
 - global-resources-fragments.oauth_2_0
+description: Base resource for managing contacts.
+is: [ClientIdRequired, GlobalErrorResponse]
 get:
-  displayName: getCasesDetailsByEmail
-  description: Get all cases for the given e-mail.
+  displayName: getAllContactDetails
+  description: Get customer contact information for the given search parameter.
   queryParameters:
-    email:
-      type: string
-      pattern: ^.+@.+\..+$
-      example: "dianedeluna@email.com"
-      description: E-mail address of a customer
     page:
       type: integer
       example: 1
@@ -27,13 +24,8 @@ get:
       type: integer
       example: 20
       description: Limit of objects per page
-  body:
-    application/json:
-      type: request-patch-opportunity.patch-opportunity
-      example: !include ../examples/requests/patch-opportunity.json
-  responses:
+  responses: 
     200:
-      body:
+      body: 
         application/json:
-          #type: response-patch-opportunity.patch-opportunity
-          example: !include ../examples/responses/patch-opportunity.json
+          type: ContactAllResponse
