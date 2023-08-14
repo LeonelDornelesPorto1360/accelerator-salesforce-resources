@@ -1,14 +1,7 @@
 #%RAML 1.0 Trait
 
 uses:
-  global-resources-fragments: /exchange_modules/f8f9abd2-10a0-400f-bb5b-60cbd5b8cb29/global-resources-fragments/1.0.1/global-resources-fragments.raml
   get-all-contacts: ../types/responses/get-all-contacts.raml
-
-is: [ global-resources-fragments.ErrorResponses ]
-securedBy:  
-- global-resources-fragments.client-enforcement
-- global-resources-fragments.basic-authentication
-- global-resources-fragments.oauth_2_0
 displayName: getContactDetails
 description: Get customer contact information for the given search parameter.
 queryParameters:
