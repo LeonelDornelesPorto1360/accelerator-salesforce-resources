@@ -1,1 +1,24 @@
 #%RAML 1.0 Trait
+
+get:
+  displayName: getCasesDetailsByEmail
+  description: Get all cases for the given e-mail.
+  queryParameters:
+    email:
+      type: string
+      pattern: ^.+@.+\..+$
+      example: "dianedeluna@email.com"
+      description: E-mail address of a customer
+    page:
+      type: integer
+      example: 1
+      description: Current page
+    limit?:
+      type: integer
+      example: 20
+      description: Limit of objects per page
+  responses: 
+    200:
+      body:
+        application/json:
+          type: CasesResponse
