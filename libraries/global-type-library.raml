@@ -1,10 +1,10 @@
 #%RAML 1.0 ResourceType
 
-traits:
+:
   request-get-ping: !include ../traits/request-get-ping.raml
 
 get:
-  is: [request-get-ping]
+  is: []
   body:
     application/json:
       example: !include ../examples/responses/get-all-cases.json
