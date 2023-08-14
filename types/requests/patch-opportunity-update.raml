@@ -104,9 +104,15 @@ types:
           required: false
         forecastCategoryName:
           type: string
-          example: Em Progresso
+          example: Omitted
           description: O nome da categoria de previsão da oportunidade.
           required: false
+          enum: 
+            - Omitted
+            - Pipeline
+            - Best Case
+            - Commit
+            - Closed
         campaignId:
           type: string
           example: FGHIJ
