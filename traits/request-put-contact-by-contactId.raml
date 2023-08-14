@@ -10,18 +10,17 @@ securedBy:
 - global-resources-fragments.client-enforcement
 - global-resources-fragments.basic-authentication
 - global-resources-fragments.oauth_2_0
-put:
-  displayName: updateContactDetails
-  description: Updates a contact's account in the service cloud system.
-  body:
-    type: put-contact-request.put-contact
-    example: !include ../examples/requests/put-contact.json
-  responses:
-    200:
-      body:
-        application/json:
-          type: put-contact.put-contact
-          example: !include ../examples/responses/put-contact.json
+displayName: updateContactDetails
+description: Updates a contact's account in the service cloud system.
+body:
+  type: put-contact-request.put-contact
+  example: !include ../examples/requests/put-contact.json
+responses:
+  200:
+    body:
+      application/json:
+        type: put-contact.put-contact
+        example: !include ../examples/responses/put-contact.json
 
 uriParameters:
   contactId:
