@@ -17,5 +17,7 @@ get:
       type: boolean
   responses:
     200:
-      body: 
-        type: response-patch-opportunity.get-ping
+      body:
+        application/json:
+          #type: response-patch-opportunity.patch-opportunity
+          example: !include ../examples/responses/patch-opportunity.json
