@@ -1,9 +1,0 @@
-#%RAML 1.0 DataType
-type: !include ../global/PaginatedPartialResponse.raml
-displayName: Contacts response
-properties:
-  hits:
-    type: array
-    items: !include Contact.raml
-examples: 
-  ContactsResponseWithHits: !include ../../examples/service/ContactsResponseExample.raml

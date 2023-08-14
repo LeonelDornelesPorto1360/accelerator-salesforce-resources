@@ -1,9 +1,0 @@
-#%RAML 1.0 DataType
-type: !include ../global/PaginatedPartialResponse.raml
-displayName: Profiles response
-properties:
-  hits:
-    type: array
-    items: !include Profile.raml
-examples: 
-  ProfilesResponseWithHits: !include ../../examples/common/ProfilesResponseExample.raml

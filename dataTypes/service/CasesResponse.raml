@@ -1,9 +1,0 @@
-#%RAML 1.0 DataType
-type: !include ../global/PaginatedPartialResponse.raml
-displayName: Cases response
-properties:
-  hits:
-    type: array
-    items: !include Case.raml
-examples: 
-  !include ../../examples/service/CasesResponseExample.raml
