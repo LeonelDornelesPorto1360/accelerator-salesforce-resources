@@ -4,6 +4,7 @@ traits:
   request-get-ping: !include ../traits/request-get-ping.raml
 
 get:
+  is: [request-get-ping]
   body:
     application/json:
       example: !include ../examples/responses/get-all-cases.json
