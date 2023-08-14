@@ -14,3 +14,8 @@ responses:
       application/json:
         type: put-contact-response.put-contact
         example: !include ../examples/responses/put-contact.json
+uriParameters:
+  contactId:
+    description: Specifies the unique identifier for the contact's account.
+    example: 0034x00001I71rbAAB
+    type: string
