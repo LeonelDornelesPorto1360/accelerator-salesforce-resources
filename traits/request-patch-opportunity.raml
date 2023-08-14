@@ -2,11 +2,14 @@
 
 uses:
   request-patch-opportunity: ../types/requests/patch-opportunity.raml
-  response-patch-opportunity:
+  response-patch-opportunity: ../types/responses/patch-opportunity.raml
 
 body:
   application/json:
     type: request-patch-opportunity.patch-opportunity
     example: !include ../examples/requests/patch-opportunity.json
 responses:
-  
+  200:
+    body:
+      application/json:
+        type: 
