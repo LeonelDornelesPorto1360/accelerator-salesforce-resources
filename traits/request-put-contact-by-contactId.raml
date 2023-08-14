@@ -10,6 +10,11 @@ securedBy:
 - global-resources-fragments.client-enforcement
 - global-resources-fragments.basic-authentication
 - global-resources-fragments.oauth_2_0
+uriParameters:
+  contactId:
+    description: Specifies the unique identifier for the contact's account.
+    example: 0034x00001I71rbAAB
+    type: string
 displayName: updateContactDetails
 description: Updates a contact's account in the service cloud system.
 body:
@@ -21,9 +26,3 @@ responses:
       application/json:
         type: put-contact.put-contact
         example: !include ../examples/responses/put-contact.json
-
-uriParameters:
-  contactId:
-    description: Specifies the unique identifier for the contact's account.
-    example: 0034x00001I71rbAAB
-    type: string
