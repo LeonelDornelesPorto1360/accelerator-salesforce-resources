@@ -100,9 +100,27 @@ types:
           required: false
         leadSource:
           type: string
-          example: Website
+          example: Advertisement
           description: A fonte de leads da oportunidade.
           required: false
+          enum: 
+            - Advertisement
+            - Customer Event
+            - Employee Referral
+            - External Referral
+            - Google AdWords
+            - Other
+            - Partner
+            - Purchased List
+            - Trade Show
+            - Webinar
+            - Website
+            - AI
+            - Base de datos Distribuidor
+            - BizCard Scanner
+            - Brand awarness
+            - Brand seen in bathroom
+            - Brand seen in delivery cars
         isClosed:
           type: boolean
           example: false
