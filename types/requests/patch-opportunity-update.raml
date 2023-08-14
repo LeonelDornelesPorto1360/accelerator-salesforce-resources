@@ -311,9 +311,15 @@ types:
           required: false
         lossReason:
           type: string
-          example: Preço muito alto
+          example: Lost to Competitor
           description: O motivo da perda da oportunidade.
           required: false
+          enum: 
+            - Lost to Competitor
+            - No Budget / Lost Funding
+            - No Decision / Non-Responsive
+            - Price
+            - Other
         lkOpportunityCreatedDate:
           type: date-only
           example: '2023-08-01'
