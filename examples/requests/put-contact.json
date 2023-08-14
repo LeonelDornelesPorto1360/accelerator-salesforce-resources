@@ -1,11 +1,9 @@
 {
-  "firstName": "Diane",
-  "lastName": "Deluna",
   "email": "dianedeluna@email.com",
+  "firstName": "Diane",
   "id": "0034x00001I71rbAAB",
-  "name": "Diane Deluna",
-  "phone": "845-304-6598",
-  "homePhone": "037-231-3911",
+  "lastName": "Deluna",
   "mobilePhone": "803-283-1927",
-  "otherPhone": "821-303-8362"
+  "name": "Diane Deluna",
+  "phone": "845-304-6598"
 }
