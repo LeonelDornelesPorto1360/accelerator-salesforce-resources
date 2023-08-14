@@ -74,9 +74,25 @@ types:
           required: false
         OpportunityType:
           type: string
-          example: Novo Negócio
+          example: Existing Business
           description: O tipo de oportunidade.
           required: false
+          enum: 
+            - Existing Business
+            - New Business
+            - Acquire
+            - Acquire - New Account
+            - Air Care - 30-day Free Trial
+            - Best Brands 2P
+            - Best Brands 3P
+            - Best Brands - Elite
+            - Best Brands - Silver
+            - Churn
+            - Decline
+            - Expansion
+            - Guaranteed Trial
+            - Handled By Distributor Only
+            - JACKSON PPE - Free Trial Request
         nextStep:
           type: string
           example: Agendar reunião
