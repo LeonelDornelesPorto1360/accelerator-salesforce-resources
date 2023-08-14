@@ -9,22 +9,20 @@ securedBy:
 - global-resources-fragments.client-enforcement
 - global-resources-fragments.basic-authentication
 - global-resources-fragments.oauth_2_0
-description: Base resource for managing contacts.
-get:
-  displayName: getAllContactDetails
-  description: Get customer contact information for the given search parameter.
-  queryParameters:
-    page:
-      type: integer
-      example: 1
-      description: Current page
-    limit?:
-      type: integer
-      example: 20
-      description: Limit of objects per page
-  responses: 
-    200:
-      body: 
-        application/json:
-          type: response-get-all-contacts.get-all-contacts
-          example: !include ../examples/responses/get-all-contacts.json
+displayName: getAllContactDetails
+description: Get customer contact information for the given search parameter.
+queryParameters:
+  page:
+    type: integer
+    example: 1
+    description: Current page
+  limit?:
+    type: integer
+    example: 20
+    description: Limit of objects per page
+responses: 
+  200:
+    body: 
+      application/json:
+        type: response-get-all-contacts.get-all-contacts
+        example: !include ../examples/responses/get-all-contacts.json
