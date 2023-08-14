@@ -1,0 +1,37 @@
+#%RAML 1.0 Trait
+
+uses:
+  global-resources-fragments: /exchange_modules/f8f9abd2-10a0-400f-bb5b-60cbd5b8cb29/global-resources-fragments/1.0.0/global-resources-fragments.raml
+  get-cases-by-params: ../types/responses/get-cases-by-params.raml
+
+is: [ global-resources-fragments.ErrorResponses ]
+securedBy:  
+- global-resources-fragments.client-enforcement
+- global-resources-fragments.basic-authentication
+- global-resources-fragments.oauth_2_0
+get:
+  description: Base resource for managing cases.
+  is: [ClientIdRequired, GlobalErrorResponse]
+  get:
+    displayName: getCasesDetailsByEmail
+    description: Get all cases for the given e-mail.
+    queryParameters:
+      email:
+        type: string
+        pattern: ^.+@.+\..+$
+        example: "dianedeluna@email.com"
+        description: E-mail address of a customer
+      page:
+        type: integer
+        example: 1
+        description: Current page
+      limit?:
+        type: integer
+        example: 20
+        description: Limit of objects per page
+    responses: 
+      200:
+        body:
+          application/json:
+            type: get-cases-by-params.get-cases-by-params
+            example: !include ../examples/responses/get-cases-by-params.json
