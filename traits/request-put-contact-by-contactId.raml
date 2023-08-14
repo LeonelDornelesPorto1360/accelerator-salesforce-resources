@@ -9,24 +9,19 @@ securedBy:
 - global-resources-fragments.client-enforcement
 - global-resources-fragments.basic-authentication
 - global-resources-fragments.oauth_2_0
-get:
-  displayName: getContactDetails
-  description: Get customer contact information for the given search parameter.
-  queryParameters:
-    search:
-      type: string
-      example: "dianedeluna@email.com"
-      description: This search parameter can be a name, email, id or phone number
-    page:
-      type: integer
-      example: 1
-      description: Current page
-    limit?:
-      type: integer
-      example: 20
-      description: Limit of objects per page
-  responses: 
+put:
+  displayName: updateContactDetails
+  description: Updates a contact's account in the service cloud system.
+  body:
+    type: Contact
+  responses:
     200:
-      body: 
+      body:
         application/json:
-          type: get-all-contacts.get-all-contacts
+          example: !include /exchange_modules/f8f9abd2-10a0-400f-bb5b-60cbd5b8cb29/accelerator-salesforce-resources/1.0.1/examples/common/UpdateResponseExample.raml
+
+uriParameters:
+  contactId:
+    description: Specifies the unique identifier for the contact's account.
+    example: 0034x00001I71rbAAB
+    type: string
