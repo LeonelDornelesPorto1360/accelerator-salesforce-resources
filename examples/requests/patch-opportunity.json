@@ -8,20 +8,20 @@
         "stageName": "Qualification",
         "amount": 10000,
         "probability": 50,
-        "closeDate": "null",
+        "closeDate": "",
         "OpportunityType": "Existing Business",
         "nextStep": "Agendar reunião",
         "leadSource": "Advertisement",
         "forecastCategoryName": "Omitted",
-        "campaignId": "null",
+        "campaignId": "",
         "pricebook2Id": "01sHs000003NMsHIAW",
         "ownerId": "005D600000BXO26IAH",
-        "syncedQuoteId": "null",
-        "contractId": "null",
+        "syncedQuoteId": "",
+        "contractId": "",
         "budgetConfirmed": true,
         "discoveryCompleted": true,
         "roiAnalysisCompleted": false,
         "lossReason": "Lost to Competitor",
-        "gbPurchaseStartDate": "null"
+        "gbPurchaseStartDate": ""
     }
 ]
