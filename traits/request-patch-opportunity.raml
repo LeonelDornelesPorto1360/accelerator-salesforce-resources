@@ -5,20 +5,6 @@ uses:
   response-patch-opportunity: ../types/responses/patch-opportunity.raml
 displayName: getCasesDetailsByEmail
 description: Get all cases for the given e-mail.
-queryParameters:
-  email:
-    type: string
-    pattern: ^.+@.+\..+$
-    example: "dianedeluna@email.com"
-    description: E-mail address of a customer
-  page:
-    type: integer
-    example: 1
-    description: Current page
-  limit?:
-    type: integer
-    example: 20
-    description: Limit of objects per page
 body:
   application/json:
     type: request-patch-opportunity.patch-opportunity
