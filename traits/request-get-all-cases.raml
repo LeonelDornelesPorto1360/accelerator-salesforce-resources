@@ -2,17 +2,18 @@
 
 uses:
   response-get-all-cases: ../types/responses/get-all-cases.raml
+
 displayName: getAllCasesDetails
-description: Get all cases for the given e-mail.
+description: Obtém todos os casos para o e-mail fornecido.
 queryParameters:
   page:
     type: integer
     example: 1
-    description: Current page
+    description: Página atual
   limit?:
     type: integer
     example: 20
-    description: Limit of objects per page
+    description: Limite de objetos por página
 responses: 
   200:
     body:
