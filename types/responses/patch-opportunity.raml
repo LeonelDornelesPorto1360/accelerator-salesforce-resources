@@ -1,1 +1,14 @@
 #%RAML 1.0 Library
+
+types:
+  put-contact:
+    type: object
+    properties:
+      sucess:
+        type: boolean
+        example: true
+        required: false
+      message:
+        type: string
+        example: Customer/Contact 00003501/0034x00001I71rbAAB updated
+        required: false
