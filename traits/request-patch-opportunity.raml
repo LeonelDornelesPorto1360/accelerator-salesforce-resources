@@ -4,7 +4,9 @@ uses:
   request-patch-opportunity: ../types/requests/patch-opportunity.raml
   response-patch-opportunity: ../types/responses/patch-opportunity.raml
 displayName: updateOpportunity
-description: Updates a opportunity in the service cloud system.
+description: |
+  This trait represents the behavior of updating an opportunity in the Service Cloud system.
+  It can be used as a reusable component in the API definition.
 body:
   application/json:
     type: request-patch-opportunity.patch-opportunity
