@@ -1,0 +1,205 @@
+#%RAML 1.0 Library
+types:
+  get-all-cases:
+    type: object
+    properties:
+      count:
+        type: integer
+        example: 1
+        required: false
+        description: "Número de casos retornados"
+      hits:
+        type: array
+        items:
+          type: object
+          properties:
+            Origin:
+              type: string
+              example: Email
+              required: false
+              description: "Origem do caso"
+            LastModifiedDate:
+              type: datetime
+              example: '2022-11-08T14:02:49.000Z'
+              required: false
+              description: "Data da última modificação"
+            AccountId:
+              type: string
+              example: 'null'
+              required: false
+              description: "ID da conta associada ao caso"
+            Description:
+              type: string
+              example: Product is not working properly.
+              required: false
+              description: "Descrição do caso"
+            SuppliedCompany:
+              type: string
+              example: 'null'
+              required: false
+              description: "Empresa fornecida"
+            LastReferencedDate:
+              type: datetime
+              example: '2022-11-08T14:23:22.000Z'
+              required: false
+              description: "Data da última referência"
+            ContactId:
+              type: string
+              example: 0034x00001I71rbAAB
+              required: false
+              description: "ID do contato associado ao caso"
+            IsClosed:
+              type: string
+              example: 'false'
+              required: false
+              description: "Indica se o caso está fechado"
+            type:
+              type: string
+              example: Case
+              required: false
+              description: "Tipo do caso"
+            Reason:
+              type: string
+              example: Performance
+              required: false
+              description: "Motivo do caso"
+            ContactPhone:
+              type: string
+              example: 845-304-6598
+              required: false
+              description: "Telefone do contato"
+            SuppliedEmail:
+              type: string
+              example: dianedeluna@email.com
+              required: false
+              description: "E-mail fornecido"
+            CreatedById:
+              type: string
+              example: 0054x000006CGhsAAG
+              required: false
+              description: "ID do usuário que criou o caso"
+            OwnerId:
+              type: string
+              example: 0054x000006CGhsAAG
+              required: false
+              description: "ID do proprietário do caso"
+            SuppliedName:
+              type: string
+              example: 'null'
+              required: false
+              description: "Nome fornecido"
+            SuppliedPhone:
+              type: string
+              example: 'null'
+              required: false
+              description: "Telefone fornecido"
+            CaseNumber:
+              type: string
+              example: '00001026'
+              required: false
+              description: "Número do caso"
+            ContactFax:
+              type: string
+              example: 'null'
+              required: false
+              description: "Fax do contato"
+            MasterRecordId:
+              type: string
+              example: 'null'
+              required: false
+              description: "ID do registro mestre"
+            ContactMobile:
+              type: string
+              example: 803-283-1927
+              required: false
+              description: "Telefone móvel do contato"
+            ParentId:
+              type: string
+              example: 'null'
+              required: false
+              description: "ID do registro pai"
+            Status:
+              type: string
+              example: Working
+              required: false
+              description: "Status do caso"
+            IsDeleted:
+              type: string
+              example: 'false'
+              required: false
+              description: "Indica se o caso foi excluído"
+            Comments:
+              type: string
+              example: 'null'
+              required: false
+              description: "Comentários"
+            Priority:
+              type: string
+              example: High
+              required: false
+              description: "Prioridade do caso"
+            LastViewedDate:
+              type: datetime
+              example: '2022-11-08T14:23:22.000Z'
+              required: false
+              description: "Data da última visualização"
+            Subject:
+              type: string
+              example: Product malfunction
+              required: false
+              description: "Assunto do caso"
+            SystemModstamp:
+              type: datetime
+              example: '2022-11-08T14:02:49.000Z'
+              required: false
+              description: "Data da última modificação do sistema"
+            Type:
+              type: string
+              example: Electronic
+              required: false
+              description: "Tipo do caso"
+            IsEscalated:
+              type: string
+              example: 'false'
+              required: false
+              description: "Indica se o caso foi escalado"
+            CreatedDate:
+              type: datetime
+              example: '2022-09-28T14:09:30.000Z'
+              required: false
+              description: "Data de criação do caso"
+            ContactEmail:
+              type: string
+              example: dianedeluna@email.com
+              required: false
+              description: "E-mail do contato"
+            Id:
+              type: string
+              example: 5004x00000MdOqzAAF
+              required: false
+              description: "ID do caso"
+            ClosedDate:
+              type: string
+              example: 'null'
+              required: false
+              description: "Data de fechamento do caso"
+            AssetId:
+              type: string
+              example: 'null'
+              required: false
+              description: "ID do ativo associado ao caso"
+            LastModifiedById:
+              type: string
+              example: 0054x000006CGhsAAG
+              required: false
+              description: "ID do usuário que modificou o caso pela última vez"
+      start:
+        type: integer
+        example: 0
+        required: false
+        description: "Índice de início dos casos retornados"
+      total:
+        type: integer
+        example: 1
+        required: false
+        description: "Número total de casos encontrados"
