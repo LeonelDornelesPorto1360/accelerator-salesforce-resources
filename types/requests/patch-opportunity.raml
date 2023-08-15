@@ -8,32 +8,26 @@ types:
       properties:
         id:
           type: string
-          example: '006D600000XfcB4IAJ'
           description: O ID da oportunidade.
           required: false
         accountId:
           type: string
-          example: '001D600001hTEoFIAW'
           description: O ID da conta associada à oportunidade.
           required: false
         recordTypeId:
           type: string
-          example: '012D60000043TppIAE'
           description: O ID do tipo de registro da oportunidade.
           required: false
         name:
           type: string
-          example: 'Exemplo de Oportunidade'
           description: O nome da oportunidade.
           required: false
         description:
           type: string
-          example: 'Descrição da oportunidade'
           description: A descrição da oportunidade.
           required: false
         stageName:
           type: string
-          example: 'Qualification'
           description: O estágio atual da oportunidade.
           required: false
           enum: 
@@ -54,12 +48,10 @@ types:
             - Closed Lost Opportunity
         amount:
           type: integer
-          example: 10000
           description: O valor da oportunidade.
           required: false
         probability:
           type: integer
-          example: 50
           description: A probabilidade de fechamento da oportunidade.
           required: false
         closeDate:
@@ -68,7 +60,6 @@ types:
           required: false
         OpportunityType:
           type: string
-          example: 'Existing Business'
           description: O tipo de oportunidade.
           required: false
           enum: 
@@ -89,12 +80,10 @@ types:
             - JACKSON PPE - Free Trial Request
         nextStep:
           type: string
-          example: 'Agendar reunião'
           description: O próximo passo planejado para a oportunidade.
           required: false
         leadSource:
           type: string
-          example: 'Advertisement'
           description: A fonte de leads da oportunidade.
           required: false
           enum: 
@@ -117,7 +106,6 @@ types:
             - Brand seen in delivery cars
         forecastCategoryName:
           type: string
-          example: 'Omitted'
           description: O nome da categoria de previsão da oportunidade.
           required: false
           enum: 
@@ -132,12 +120,10 @@ types:
           required: false
         pricebook2Id:
           type: string
-          example: '01sHs000003NMsHIAW'
           description: O ID do catálogo de preços associado à oportunidade.
           required: false
         ownerId:
           type: string
-          example: '005D600000BXO26IAH'
           description: O ID do proprietário da oportunidade.
           required: false
         syncedQuoteId:
@@ -150,31 +136,4 @@ types:
           required: false
         budgetConfirmed:
           type: boolean
-          example: true
-          description: Indica se o orçamento da oportunidade foi confirmado.
-          required: false
-        discoveryCompleted:
-          type: boolean
-          example: true
-          description: Indica se a descoberta da oportunidade foi concluída.
-          required: false
-        roiAnalysisCompleted:
-          type: boolean
-          example: false
-          description: Indica se a análise de ROI da oportunidade foi concluída.
-          required: false
-        lossReason:
-          type: string
-          example: 'Lost to Competitor'
-          description: O motivo da perda da oportunidade.
-          required: false
-          enum: 
-            - Lost to Competitor
-            - No Budget / Lost Funding
-            - No Decision / Non-Responsive
-            - Price
-            - Other
-        gbPurchaseStartDate:
-          type: string
-          description: A data de início da compra global da oportunidade.
-          required: false
+          description: Indica
