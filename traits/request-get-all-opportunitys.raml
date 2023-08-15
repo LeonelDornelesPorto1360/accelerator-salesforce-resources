@@ -1,7 +1,7 @@
 #%RAML 1.0 Trait
 
 uses:
-  response-get-all-cases: ../types/responses/get-all-cases.raml
+  response-get-all-cases: ../types/responses/get-all-opportunitys.raml
 displayName: getAllCasesDetails
 description: Get all cases for the given e-mail.
 queryParameters:
@@ -18,4 +18,4 @@ responses:
     body:
       application/json:
         type: response-get-all-cases.get-all-cases
-        example: !include ../examples/responses/get-all-cases.json
+        example: !include ../examples/responses/get-all-opportunitys.json
