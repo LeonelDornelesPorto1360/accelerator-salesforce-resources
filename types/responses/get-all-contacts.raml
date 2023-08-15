@@ -2,50 +2,1085 @@
 
 types:
   get-all-contacts:
-    type: object
-    properties:
-      count:
-        type: integer
-        example: 7
-        required: false
-      hits:
-        type: array
-        items:
-          type: object
-          properties:
-            firstName:
-              type: string
-              example: Carole
-              required: false
-            lastName:
-              type: string
-              example: White (Sample)
-              required: false
-            email:
-              type: string
-              example: info@salesforce.com
-              required: false
-            id:
-              type: string
-              example: 003Hs00004aSfN6IAK
-              required: false
-            name:
-              type: string
-              example: Carole White (Sample)
-              required: false
-            phone:
-              type: string
-              example: 1 (800) 667-6389
-              required: false
-            mobilePhone:
-              type: string
-              example: 803-283-1927
-              required: false
-      start:
-        type: integer
-        example: 0
-        required: false
-      total:
-        type: integer
-        example: 1
-        required: false
+#%RAML 1.0 DataType 
+type: array
+items:
+  type: object
+  properties:
+    EK_Help_from_SWAT_Team__c:
+      type: string
+      example: 'false'
+      required: false
+    AK_Do_not_disclose_to_distributor__c:
+      type: string
+      example: 'false'
+      required: false
+    GB_RPT_Oppt_created_less_than_12m_before__c:
+      type: string
+      example: '0.0'
+      required: false
+    HasOpenActivity:
+      type: string
+      example: 'false'
+      required: false
+    NK_NAM_Generated_Revenue__c:
+      type: string
+      example: '0.0'
+      required: false
+    AB_Handled_by_Distributor_Only__c:
+      type: string
+      example: 'false'
+      required: false
+    AK_ANZ_Flag_for_Demand_Review__c:
+      type: string
+      example: 'false'
+      required: false
+    LK_BID_Process__c:
+      type: string
+      example: 'N'
+      required: false
+    AK_Project_FUR__c:
+      type: string
+      example: 'false'
+      required: false
+    EK_Expected_CM_Revenue__c:
+      type: string
+      example: '166.67'
+      required: false
+    EH_VAP_Bundle__c:
+      type: string
+      example: 'false'
+      required: false
+    Number_of_Products_excluded_Dispenser__c:
+      type: string
+      example: '0.0'
+      required: false
+    GB_One_Time_Sale__c:
+      type: string
+      example: 'false'
+      required: false
+    APAC_active_opportunity__c:
+      type: string
+      example: 'true'
+      required: false
+    NK_Rollup_count_of_EPH3_with_value_HYT__c:
+      type: string
+      example: '0.0'
+      required: false
+    NK_NAM_End_User_Oppty__c:
+      type: string
+      example: 'false'
+      required: false
+    GB_Parent_Opp_Counter__c:
+      type: string
+      example: '1.0'
+      required: false
+    GB_Status__c:
+      type: string
+      example: Open
+      required: false
+    IsClosed:
+      type: string
+      example: 'true'
+      required: false
+    EB_NCO_Total_Cost__c:
+      type: string
+      example: '0.0'
+      required: false
+    GB_NBTRevenue__c:
+      type: string
+      example: '0.0'
+      required: false
+    NK_CampaignQualityScore__c:
+      type: string
+      example: '6.5'
+      required: false
+    RecordTypeId:
+      type: string
+      example: 012D60000043TppIAE
+      required: false
+    AK_Trial__c:
+      type: string
+      example: 'false'
+      required: false
+    EH_RPT_Account_Region__c:
+      type: string
+      example: Other
+      required: false
+    AK_Monthly_Forecast__c:
+      type: string
+      example: '4.0'
+      required: false
+    EB_NCO_SO_ID_Number__c:
+      type: string
+      example: '0000000001'
+      required: false
+    GB_HWP_Closed_Sales__c:
+      type: string
+      example: '0.0'
+      required: false
+    EK_Banked_Revenue_YTD__c:
+      type: string
+      example: '0.0'
+      required: false
+    NH_Opportunity_Owner_Email__c:
+      type: string
+      example: joacilenon.queiroz@sys4b.com.br
+      required: false
+    SystemModstamp:
+      type: datetime
+      example: '2023-08-14T22:29:39.000Z'
+      required: false
+    NK_Distributor_Consolidation__c:
+      type: string
+      example: 'false'
+      required: false
+    AK_DFS_Opportunity__c:
+      type: string
+      example: Non Dress for Success
+      required: false
+    GB_NB_Verified_Count__c:
+      type: string
+      example: '0.0'
+      required: false
+    LK_Send_Email__c:
+      type: string
+      example: 'false'
+      required: false
+    NK_Forecasting_Planning__c:
+      type: string
+      example: 'false'
+      required: false
+    NK_Quarter_formula__c:
+      type: string
+      example: Q3
+      required: false
+    GB_RPT_Trial_counter__c:
+      type: string
+      example: '0.0'
+      required: false
+    NK_Full_Credit_Split_Indicator__c:
+      type: string
+      example: 'false'
+      required: false
+    GB_Expected_CY_revenue_2012__c:
+      type: string
+      example: '0.0'
+      required: false
+    NK_Qualifies_for_SLA_Process__c:
+      type: string
+      example: 'false'
+      required: false
+    CreatedById:
+      type: string
+      example: 005D600000BXO26IAH
+      required: false
+    NK_Related_to_Prospecting_Account__c:
+      type: string
+      example: 'false'
+      required: false
+    NK_OpportunityFinancialScore__c:
+      type: string
+      example: '1.0'
+      required: false
+    NK_Current_Year_Amount__c:
+      type: string
+      example: '2000.0'
+      required: false
+    NK_Link_to_Site_Assessment_Report__c:
+      type: string
+      example: https://kcp.showpad.com/share/PYXJPNdOXk5yB7uXrjEUM
+      required: false
+    GB_Account_State__c:
+      type: string
+      example: SP
+      required: false
+    GB_Closed_Won_Sales__c:
+      type: string
+      example: '2000.0'
+      required: false
+    Fiscal:
+      type: string
+      example: 2023 3
+      required: false
+    CreatedDate:
+      type: datetime
+      example: '2023-08-11T20:19:58.000Z'
+      required: false
+    HasOverdueTask:
+      type: string
+      example: 'false'
+      required: false
+    GB_Account_City__c:
+      type: string
+      example: São Paulo
+      required: false
+    GB_Buyer_Stage__c:
+      type: string
+      example: C
+      required: false
+    AK_IBP_Cycle__c:
+      type: string
+      example: July
+      required: false
+    GB_Distributor_Initiated__c:
+      type: string
+      example: 'false'
+      required: false
+    GB_Days_since_Last_Modified__c:
+      type: string
+      example: '1.0'
+      required: false
+    AK_Close_Month__c:
+      type: string
+      example: August
+      required: false
+    EK_Opp_Product_Positive_Count__c:
+      type: string
+      example: '1.0'
+      required: false
+    AK_Project_Boost__c:
+      type: string
+      example: 'false'
+      required: false
+    NK_Facility_Assessment_Complete__c:
+      type: string
+      example: 'false'
+      required: false
+    NH_Total_Current_Order__c:
+      type: string
+      example: '0.0'
+      required: false
+    GB_Expected_Revenue__c:
+      type: string
+      example: '0.0'
+      required: false
+    EB_RPT_Parent_Oppty_Stage_Grp__c:
+      type: string
+      example: Closed Won Opportunity
+      required: false
+    NK_Field_Opportunity__c:
+      type: string
+      example: 'false'
+      required: false
+    GB_RPT_Oppty_Age__c:
+      type: string
+      example: '1.0'
+      required: false
+    NK_Opp_SCM__c:
+      type: string
+      example: '0.0'
+      required: false
+    NK_View_Shipto_Report__c:
+      type: string
+      example: >-
+        <a
+        href="https://kimberlyclark.sharepoint.com/Teams/A66/A456/Ecomm%20Projects/Ship-To%20Report.xlsx"
+        target="_blank">View Shipto Report</a>
+      required: false
+    LK_Attachment_Included__c:
+      type: string
+      example: 'false'
+      required: false
+    AK_Attachment_Counter_Logic__c:
+      type: string
+      example: 'False'
+      required: false
+    Budget_Confirmed__c:
+      type: string
+      example: 'false'
+      required: false
+    GB_RPT_Old_Opportunity__c:
+      type: string
+      example: '1.0'
+      required: false
+    NK_Onsite_Opportunity__c:
+      type: string
+      example: 'false'
+      required: false
+    NK_Initial_ClosedWon__c:
+      type: string
+      example: 'false'
+      required: false
+    EK_Accumulated_Revenue__c:
+      type: string
+      example: '833.33'
+      required: false
+    LK_OPP_MOD_Dispenser__c:
+      type: string
+      example: 'false'
+      required: false
+    NK_Active_Dollars__c:
+      type: string
+      example: '0.0'
+      required: false
+    EK_Accumulated_Revenue_YTD__c:
+      type: string
+      example: '0.0'
+      required: false
+    EK_Eligible__c:
+      type: string
+      example: 'false'
+      required: false
+    Id:
+      type: string
+      example: 006D600000XfcB4IAJ
+      required: false
+    EH_Submitted_for_fulfillment__c:
+      type: string
+      example: 'false'
+      required: false
+    GB_Attachment_Counter__c:
+      type: string
+      example: '0.0'
+      required: false
+    GB_Campaign_Indicator__c:
+      type: string
+      example: '0.0'
+      required: false
+    Remastering_Criteria_2__c:
+      type: string
+      example: 'false'
+      required: false
+    LastAmountChangedHistoryId:
+      type: string
+      example: 008D600000g8vAcIAI
+      required: false
+    NK_Create_All_3_Prospecting_Tasks__c:
+      type: string
+      example: 'false'
+      required: false
+    EK_Banked_Revenue__c:
+      type: string
+      example: '0.0'
+      required: false
+    AK_ICP_Questionnaire__c:
+      type: string
+      example: 'No'
+      required: false
+    NK_Shipto_Multiple_Locations_Attached__c:
+      type: string
+      example: 'false'
+      required: false
+    Amount:
+      type: string
+      example: '2000.0'
+      required: false
+    NK_Amount__c:
+      type: string
+      example: '2000.0'
+      required: false
+    NK_OpportunityUrgency__c:
+      type: string
+      example: '10.0'
+      required: false
+    EK_Expected_Carry_Over_Revenue_YTD__c:
+      type: string
+      example: '0.0'
+      required: false
+    GB_Lead_is_Converted_Email_Alert__c:
+      type: string
+      example: 'false'
+      required: false
+    NK_HC_ECYR_Impact__c:
+      type: string
+      example: '0.0'
+      required: false
+    EK_One_Call_to_Close__c:
+      type: string
+      example: 'false'
+      required: false
+    GB_Opportunity_18_digit_ID__c:
+      type: string
+      example: 006D600000XfcB4IAJ
+      required: false
+    GB_RPT_Exp_CY_revenue_Closed_Oppt__c:
+      type: string
+      example: '0.0'
+      required: false
+    LK_BR_First_Order_Amount__c:
+      type: string
+      example: '0.0'
+      required: false
+    LK_NB_MOD_Dispenser__c:
+      type: string
+      example: 'false'
+      required: false
+    ForecastCategory:
+      type: string
+      example: Closed
+      required: false
+    NK_Onvation_Form_Record_Count__c:
+      type: string
+      example: '0.0'
+      required: false
+    Expected_Next_Year_Revenue__c:
+      type: string
+      example: '0.0'
+      required: false
+    NK_Previous_Year_Amount__c:
+      type: string
+      example: '0.0'
+      required: false
+    LastStageChangeInDays:
+      type: string
+      example: '0'
+      required: false
+    EH_FOC_Order_type__c:
+      type: string
+      example: Sample Request
+      required: false
+    GB_RPT_Old__c:
+      type: string
+      example: Old
+      required: false
+    NK_Active_Prospecting_Oppty__c:
+      type: string
+      example: 'false'
+      required: false
+    EB_NCO_SAP_Account_Selected__c:
+      type: string
+      example: 'false'
+      required: false
+    Remastering_Criteria_3__c:
+      type: string
+      example: 'false'
+      required: false
+    Number_of_Stage_Changes__c:
+      type: string
+      example: '0.0'
+      required: false
+    AK_QYP_Opportunity__c:
+      type: string
+      example: Non Question Your Perspective
+      required: false
+    LeadSource:
+      type: string
+      example: Campaign
+      required: false
+    GB_Potential_Opportunity_Amount_del__c:
+      type: string
+      example: '0.0'
+      required: false
+    AK_Platform_EfWP_tasks__c:
+      type: string
+      example: Create 7 tasks
+      required: false
+    EK_Sustainability_Audit_Tool_used__c:
+      type: string
+      example: 'false'
+      required: false
+    Pricebook2Id:
+      type: string
+      example: 01sHs000003NMsHIAW
+      required: false
+    ForecastCategoryName:
+      type: string
+      example: Closed
+      required: false
+    EH_RPT_Opportunity_Counter__c:
+      type: string
+      example: '1.0'
+      required: false
+    EK_RPT_Week_number__c:
+      type: string
+      example: '32.0'
+      required: false
+    FiscalYear:
+      type: string
+      example: '2023'
+      required: false
+    AK_CHESS_Opportunity__c:
+      type: string
+      example: Non C.H.E.S.S.*
+      required: false
+    EK_DSR_Assistance__c:
+      type: string
+      example: No DSR
+      required: false
+    EK_Opp_Product_Negative_Count__c:
+      type: string
+      example: '0.0'
+      required: false
+    GB_Competitor_Not_Known__c:
+      type: string
+      example: 'false'
+      required: false
+    GB_Send_Notification_Email__c:
+      type: string
+      example: 'false'
+      required: false
+    GB_CreatedDate__c:
+      type: date-only
+      example: '2023-08-11'
+      required: false
+    ExpectedRevenue:
+      type: string
+      example: '2000.0'
+      required: false
+    AK_Distributor_Manager__c:
+      type: string
+      example: 'false'
+      required: false
+    PushCount:
+      type: string
+      example: '0'
+      required: false
+    GB_Pipeline_Sales__c:
+      type: string
+      example: '0.0'
+      required: false
+    Matching__c:
+      type: string
+      example: 'false'
+      required: false
+    GB_Residual_Impact_Expected_Next_Year__c:
+      type: string
+      example: '0.0'
+      required: false
+    AK_Quarterly_Forecast__c:
+      type: string
+      example: '13.0'
+      required: false
+    EK_1st_Order_Quantity_Empty_Count__c:
+      type: string
+      example: '1.0'
+      required: false
+    LastModifiedById:
+      type: string
+      example: 005D600000BXO26IAH
+      required: false
+    LastModifiedDate:
+      type: datetime
+      example: '2023-08-14T22:29:39.000Z'
+      required: false
+    NK_Create_6_Tasks_NAM_Healthcare_Only__c:
+      type: string
+      example: 'false'
+      required: false
+    Partners_Program_Acct_Eligibility__c:
+      type: string
+      example: 'false'
+      required: false
+    EH_RPT_Close_Month__c:
+      type: string
+      example: '8.0'
+      required: false
+    AK_ECYR_by_day__c:
+      type: string
+      example: '0.0'
+      required: false
+    NK_MAHH_ECYR_Impact__c:
+      type: string
+      example: '0.0'
+      required: false
+    YK_Supply_or_Not__c:
+      type: string
+      example: 'false'
+      required: false
+    GH_Annualized_Revenue_Gains_Losses__c:
+      type: string
+      example: '2000.0'
+      required: false
+    IsDeleted:
+      type: string
+      example: 'false'
+      required: false
+    LK_BR_E_Channel__c:
+      type: string
+      example: '50'
+      required: false
+    NK_Active_Count__c:
+      type: string
+      example: 'false'
+      required: false
+    GB_Account_RecordTypeID__c:
+      type: string
+      example: 012D60000043Tjw
+      required: false
+    LK_Opportunity_Created_Date__c:
+      type: date-only
+      example: '2023-08-11'
+      required: false
+    AK_NSV_Annual__c:
+      type: string
+      example: '1894.0'
+      required: false
+    Product_Count__c:
+      type: string
+      example: '1.0'
+      required: false
+    GB_Current_User_Profile__c:
+      type: string
+      example: Administrador do sistema
+      required: false
+    Dummy_Product_Code__c:
+      type: string
+      example: 'false'
+      required: false
+    EB_RPT_Stage_text__c:
+      type: string
+      example: Closed Won Opportunity
+      required: false
+    EH_Oppt_Extensions__c:
+      type: string
+      example: '0.0'
+      required: false
+    GB_Annualised_Revenue_Past_Due__c:
+      type: string
+      example: '2000.0'
+      required: false
+    NK_ICON_Opportunity__c:
+      type: string
+      example: 'false'
+      required: false
+    AgeInDays:
+      type: string
+      example: '3'
+      required: false
+    NK_Marketing_Generated_Revenue__c:
+      type: string
+      example: '0.0'
+      required: false
+    AK_Value_of_Risk__c:
+      type: string
+      example: '0.0'
+      required: false
+    YK_Approved__c:
+      type: string
+      example: 'false'
+      required: false
+    StageName:
+      type: string
+      example: Closed Won Opportunity
+      required: false
+    EK_AMR_processed__c:
+      type: string
+      example: 'false'
+      required: false
+    Probability:
+      type: string
+      example: '100.0'
+      required: false
+    GH_Opportunity_Multiplier_Number__c:
+      type: string
+      example: '1.0'
+      required: false
+    AK_NBT_Volume__c:
+      type: string
+      example: '0.0'
+      required: false
+    AK_DART__c:
+      type: string
+      example: 'false'
+      required: false
+    GB_Number_of_Products_on_Opp__c:
+      type: string
+      example: '1.0'
+      required: false
+    GB_Account_Country__c:
+      type: string
+      example: Brasil
+      required: false
+    AccountId:
+      type: string
+      example: 001D600001hTEoFIAW
+      required: false
+    YK_Stage_Number__c:
+      type: string
+      example: C
+      required: false
+    NK_PA_Number_not_available__c:
+      type: string
+      example: 'false'
+      required: false
+    EK_HQ_Opportunity__c:
+      type: string
+      example: 'false'
+      required: false
+    NK_Partners_Program_Elegibility__c:
+      type: string
+      example: 'false'
+      required: false
+    NK_NAM_Opportunity__c:
+      type: string
+      example: 'false'
+      required: false
+    Name:
+      type: string
+      example: Assaí Supermercados-Venda Dispensers de Álcool
+      required: false
+    EK_NCO_Total_Cases__c:
+      type: string
+      example: '50.0'
+      required: false
+    AK_Active_Check__c:
+      type: string
+      example: 'false'
+      required: false
+    LK_Send_to_Telesales__c:
+      type: string
+      example: 'false'
+      required: false
+    EB_RPT_OpptyStagetext__c:
+      type: string
+      example: Closed Won Opportunity
+      required: false
+    GB_Past_due__c:
+      type: string
+      example: '1.0'
+      required: false
+    NK_CVT_View__c:
+      type: string
+      example: >-
+        <a
+        href="http://www.nacustomerportal.kcc.com/CustomerPortal_Internet/UI/Site%20Admin%20Center/ControllerPage.aspx?contractnbr=&amp;salesorgs=2811&amp;Source=CVT"
+        target="_blank">CVT VIEW</a>
+      required: false
+    GH_RPT_Opportunity_pushes__c:
+      type: string
+      example: '0.0'
+      required: false
+    GB_HasActivity__c:
+      type: string
+      example: 'false'
+      required: false
+    NK_Dispensers_in_Forecast__c:
+      type: string
+      example: 'false'
+      required: false
+    GB_Number_of_Competitors__c:
+      type: string
+      example: '0.0'
+      required: false
+    LK_Amount__c:
+      type: string
+      example: '2000.0'
+      required: false
+    Discovery_Completed__c:
+      type: string
+      example: 'false'
+      required: false
+    AK_Currently_Using_JAD__c:
+      type: string
+      example: 'false'
+      required: false
+    GB_No_Distributor_Indicator__c:
+      type: string
+      example: 'false'
+      required: false
+    GB_RevenueStartDate__c:
+      type: date-only
+      example: '2023-08-01'
+      required: false
+    LK_Delivery_Restricted_Area__c:
+      type: string
+      example: 'N'
+      required: false
+    NK_Month_Formula__c:
+      type: string
+      example: 08 - August
+      required: false
+    EK_Expected_CY_Rev__c:
+      type: string
+      example: '833.33'
+      required: false
+    NK_Count_of_What_tools_selected__c:
+      type: string
+      example: '0.0'
+      required: false
+    GB_DOST_Closed_Sales__c:
+      type: string
+      example: '0.0'
+      required: false
+    GB_RPT_Sales_Opportunity_counter__c:
+      type: string
+      example: '0.0'
+      required: false
+    AK_Test__c:
+      type: string
+      example: '-3420.0'
+      required: false
+    GB_RPT_Parent_Oppty_Seller_initiative__c:
+      type: string
+      example: N/A
+      required: false
+    IsWon:
+      type: string
+      example: 'true'
+      required: false
+    EK_Probability_Seller_entry__c:
+      type: string
+      example: '35'
+      required: false
+    IsPriorityRecord:
+      type: string
+      example: 'false'
+      required: false
+    EB_No_SR_Line_Items_wout_Line_Desc__c:
+      type: string
+      example: '1.0'
+      required: false
+    GH_Opportunity_Multiplier__c:
+      type: string
+      example: '1.0'
+      required: false
+    LK_BID_Process_Relaunch__c:
+      type: string
+      example: 'false'
+      required: false
+    NK_Sample_Kit_Requests__c:
+      type: string
+      example: >-
+        <a
+        href="http://www.nacustomerportal.kcc.com/CustomerPortal_Internet/UI/Root/SampleRequestSalesRep.aspx"
+        target="_blank">KCRC Sample Request</a>
+      required: false
+    NK_PA_Validated__c:
+      type: string
+      example: 'false'
+      required: false
+    IsPrivate:
+      type: string
+      example: 'false'
+      required: false
+    EK_Annualised_Revenue_NB__c:
+      type: string
+      example: '0.0'
+      required: false
+    NK_Bonus_Point_Amt__c:
+      type: string
+      example: '0.0'
+      required: false
+    type:
+      type: string
+      example: Opportunity
+      required: false
+    NK_Non_Active_Count__c:
+      type: string
+      example: '0.0'
+      required: false
+    CloseDate:
+      type: date-only
+      example: '2023-08-14'
+      required: false
+    AK_National_Parent_Opp_Expected_CYR__c:
+      type: string
+      example: '0.0'
+      required: false
+    GB_Trial_Resources__c:
+      type: string
+      example: None
+      required: false
+    EB_RPT_Parent_Opportunity_Name__c:
+      type: string
+      example: Assaí Supermercados-Venda Dispensers de Álcool
+      required: false
+    NK_Event_is_not_required_for_HWP_Oppty__c:
+      type: string
+      example: 'false'
+      required: false
+    FiscalQuarter:
+      type: string
+      example: '3'
+      required: false
+    NH_Focus_Opportunity__c:
+      type: string
+      example: 'false'
+      required: false
+    EK_Annualized_Revenue_Probability__c:
+      type: string
+      example: '2000.0'
+      required: false
+    EK_Test_Opportunity__c:
+      type: string
+      example: 'false'
+      required: false
+    ROI_Analysis_Completed__c:
+      type: string
+      example: 'false'
+      required: false
+    LK_Amount_Monthly_basis__c:
+      type: string
+      example: '2000.0'
+      required: false
+    NK_BDM_Generated_Revenue__c:
+      type: string
+      example: '0.0'
+      required: false
+    GB_RevenueCloseDate__c:
+      type: date-only
+      example: '2024-07-31'
+      required: false
+    EK_DDS__c:
+      type: string
+      example: 'false'
+      required: false
+    LastCloseDateChangedHistoryId:
+      type: string
+      example: 008D600000g8vAqIAI
+      required: false
+    GH_Expected_Monthly_Revenue__c:
+      type: string
+      example: '167.0'
+      required: false
+    AK_ECYR_by_Today__c:
+      type: string
+      example: '761.64'
+      required: false
+    TotalOpportunityQuantity:
+      type: string
+      example: '50.0'
+      required: false
+    OwnerId:
+      type: string
+      example: 005D600000BXO26IAH
+      required: false
+    NK_Onvation_Tactics_Complete__c:
+      type: string
+      example: 'false'
+      required: false
+    NK_It_All_Adds_Up_Closed_Sales__c:
+      type: string
+      example: '0.0'
+      required: false
+    NK_Vending_Solution__c:
+      type: string
+      example: 'false'
+      required: false
+    NH_Number_of_Huggies_Products__c:
+      type: string
+      example: '0.0'
+      required: false
+    EH_Deliver_to_KC_Employee__c:
+      type: string
+      example: 'false'
+      required: false
+    LK_Calculator_check__c:
+      type: string
+      example: 'false'
+      required: false
+    NK_Opportunity_Calculators__c:
+      type: string
+      example: >-
+        <a href="http://www.kcc.com/kcp/ioc/index.html"
+        target="_blank">Industrial Mfg</a>, <a
+        href="http://www.kcc.com/kcp/bhp/index.html" target="_blank">Be
+        Healthy</a>, <a href="http://www.dev.kcc.com/kcp/re/e2MPact/getpuc1.asp"
+        target="_blank">Product Usage Calculator</a>
+      required: false
+    LastStageChangeDate:
+      type: datetime
+      example: '2023-08-14T22:29:39.000Z'
+      required: false
+    Type:
+      type: string
+      example: New Business
+      required: false
+    EK_Expected_CY_Revenue_YTD__c:
+      type: string
+      example: '0.0'
+      required: false
+    HasOpportunityLineItem:
+      type: string
+      example: 'true'
+      required: false
+    GB_RPT_Days_from_creation__c:
+      type: string
+      example: '4.0'
+      required: false
+    GB_RPT_New_business_counter__c:
+      type: string
+      example: '0.0'
+      required: false
+    EK_1st_Order_Revenue__c:
+      type: string
+      example: '0.0'
+      required: false
+    NK_Sales_Contribution_Rollup__c:
+      type: string
+      example: '0.0'
+      required: false
+    NK_Annualized_Revenue_Quota__c:
+      type: string
+      example: '2000000.0'
+      required: false
+    GB_Stage_Number__c:
+      type: string
+      example: C
+      required: false
+    CN_Amount_2__c:
+      type: string
+      example: '2000.0'
+      required: false
+    NK_Telesales_Required__c:
+      type: string
+      example: 'false'
+      required: false
+    NK_Check_In__c:
+      type: string
+      example: 'false'
+      required: false
+    GB_Trial_Quantity_Total__c:
+      type: string
+      example: '0.0'
+      required: false
+    EK_Expected_CY_Revenue_CLOSE_YEAR__c:
+      type: string
+      example: '833.0'
+      required: false
+    ContactId:
+      type: string
+      example: 003D600001DGXtgIAH
+      required: false
+    Days_from_Closed_to_Today__c:
+      type: string
+      example: '1.0'
+      required: false
+    NK_Efficient_Workplace_Call_Plan__c:
+      type: string
+      example: >-
+        <a
+        href="http://sites.kcc.com/Teams/A307/EfWP%20Efficient%20Workplace/EfWP%20Call%20Organizer.pdf"
+        target="_blank">Efficient Workplace Call Plan</a>
+      required: false
+    LK_Created_By_Third_Party__c:
+      type: string
+      example: 'false'
+      required: false
+    GB_Inmediately_Lost__c:
+      type: string
+      example: 'false'
+      required: false
+    NK_Campaign_Opportunity_Touched__c:
+      type: string
+      example: 'false'
+      required: false
+    EB_NCO_Send_to_Home_Address__c:
+      type: string
+      example: 'false'
+      required: false
+    GB_Number_of_Winning_Competitors__c:
+      type: string
+      example: '0.0'
+      required: false
+    LK_Amount_2__c:
+      type: string
+      example: '2000.0'
+      required: false
+    LK_SAP_Account__c:
+      type: string
+      example: '5646545564'
+      required: false
+    NK_Confidence_Level__c:
+      type: string
+      example: High
+      required: false
+    EK_Account_Type__c:
+      type: string
+      example: Direct Customer Group
+      required: false
+    Description:
+      type: string
+      example: Venda de papel Neve
+      required: false
