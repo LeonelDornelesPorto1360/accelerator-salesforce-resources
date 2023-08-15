@@ -136,4 +136,27 @@ types:
           required: false
         budgetConfirmed:
           type: boolean
-          description: Indica
+          description: Indica se o orçamento da oportunidade foi confirmado.
+          required: false
+        discoveryCompleted:
+          type: boolean
+          description: Indica se a descoberta da oportunidade foi concluída.
+          required: false
+        roiAnalysisCompleted:
+          type: boolean
+          description: Indica se a análise de ROI da oportunidade foi concluída.
+          required: false
+        lossReason:
+          type: string
+          description: O motivo da perda da oportunidade.
+          required: false
+          enum: 
+            - Lost to Competitor
+            - No Budget / Lost Funding
+            - No Decision / Non-Responsive
+            - Price
+            - Other
+        gbPurchaseStartDate:
+          type: string
+          description: A data de início da compra global da oportunidade.
+          required: false
